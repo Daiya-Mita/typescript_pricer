@@ -48,8 +48,8 @@ let runningSum:number = 0;
 for (var i = 0; i < mesh; i++) {
     var x:number = rnd_domain_min + i * step_delta;
     var moved_spot:number = spot*Math.exp(r*expiry-0.5*vol*vol*expiry+vol*Math.sqrt(expiry)*x);
-    var payoff:number = Math.max(0, moved_spot - 50);  // payoff関数がmaxになってるとコールオプション
-    //var payoff:number = payoff_func(moved_spot)
+    //var payoff:number = Math.max(0, moved_spot - 50);  // payoff関数がmaxになってるとコールオプション
+    var payoff:number = payoff_func(moved_spot)
     runningSum += payoff * pdf(x) * step_delta;
 }
 let ans:number = runningSum * Math.exp(-r*expiry);
