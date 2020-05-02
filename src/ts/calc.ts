@@ -29,7 +29,7 @@ function function_parser_sample(func_param: String[]){
 }
 
 
-const spot:number = 100;  // 外部から取ってくることを想定
+const spot:number = 130;  // 外部から取ってくることを想定
 const vol:number = 0.8;  // 外部から取ってくることを想定
 const expiry_date = new Date('2020/06/17 12:34:56');
 const expiry_date_unix = Math.floor(expiry_date.getTime()/1000);  // 外部から取ってくることを想定

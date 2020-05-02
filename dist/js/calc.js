@@ -27,7 +27,7 @@ function function_parser_sample(func_param) {
         return a[target_grid] * x + b[target_grid];
     };
 }
-var spot = 100; // 外部から取ってくることを想定
+var spot = 130; // 外部から取ってくることを想定
 var vol = 0.8; // 外部から取ってくることを想定
 var expiry_date = new Date('2020/06/17 12:34:56');
 var expiry_date_unix = Math.floor(expiry_date.getTime() / 1000); // 外部から取ってくることを想定
